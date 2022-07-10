@@ -7,11 +7,9 @@
     android:background="@color/background"
     android:orientation="vertical"
     app:layout_constraintBottom_toTopOf="@id/icons"
-
     tools:context=".MainActivity">
 
     <androidx.appcompat.widget.Toolbar
-
         android:id="@+id/main_toolbar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -30,7 +28,6 @@
             android:textSize="20sp"
             android:textStyle="bold" />
     </androidx.appcompat.widget.Toolbar>
-
 
     <TextView
         android:id="@+id/text_info"
@@ -52,29 +49,22 @@
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:orientation="vertical"
-
         app:layout_constraintStart_toStartOf="@+id/text_info"
         app:layout_constraintTop_toBottomOf="@+id/text_info">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nome_paciente_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="10dp"
-            android:hint="@string/name" />
-
-
+            android:hint="@string/name"
+            android:maxLength="20" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/dia"
-
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:orientation="vertical"
-        android:paddingEnd="10dp"
         app:layout_constraintEnd_toEndOf="@+id/nome_paciente"
         app:layout_constraintStart_toStartOf="@+id/nome_paciente"
         app:layout_constraintTop_toBottomOf="@+id/nome_paciente">
@@ -85,31 +75,28 @@
             android:layout_height="wrap_content"
             android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_down_24"
             android:focusableInTouchMode="false"
-            android:hint="Dia" />
+            android:hint="@string/dia" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/horario"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:orientation="vertical"
-        android:paddingEnd="10dp"
         app:layout_constraintEnd_toEndOf="@+id/nome_paciente"
         app:layout_constraintStart_toStartOf="@+id/dia"
         app:layout_constraintTop_toBottomOf="@+id/dia">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/horario"
+            android:id="@+id/horarioT"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_down_24"
             android:focusableInTouchMode="false"
-            android:hint="Horario" />
+            android:hint="@string/horario" />
 
     </com.google.android.material.textfield.TextInputLayout>
-
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/continuar"
@@ -118,7 +105,7 @@
         android:layout_marginTop="48dp"
         android:layout_marginEnd="10dp"
         android:background="@drawable/continue_shp"
-        android:text="Continuar"
+        android:text="@string/continuar"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textStyle="bold"
@@ -130,7 +117,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Voltar"
+        android:text="@string/voltar"
         android:textColor="@color/continue_background"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@id/continuar"
@@ -139,9 +126,11 @@
 
     <LinearLayout
         android:id="@+id/icons"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
         <include
             layout="@layout/icons_bottom"
@@ -151,6 +140,5 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
     </LinearLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

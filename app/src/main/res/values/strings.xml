@@ -3,6 +3,12 @@
     <string name="name">Nome do Paciente</string>
     <string name="contratar">Contratar</string>
     <string name="selec_dia_horario">Selecione o dia e horário para o plantão.</string>
-    <string name="data">Dia</string>
     <string name="horario">Horário</string>
+    <string name="home">Home</string>
+    <string name="plantoes">Plantões</string>
+    <string name="favoritos">Favoritos</string>
+    <string name="minha_conta">Minha Conta</string>
+    <string name="dia">Dia</string>
+    <string name="continuar">Continuar</string>
+    <string name="voltar">Voltar</string>
 </resources>
