@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Teste UpBase</string>
+    <string name="name">Nome do Paciente</string>
+    <string name="contratar">Contratar</string>
+    <string name="selec_dia_horario">Selecione o dia e horário para o plantão.</string>
+    <string name="data">Dia</string>
+    <string name="horario">Horário</string>
+</resources>

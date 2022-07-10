@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="10sp"
+    android:background="@color/white"
+    android:gravity="center">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:drawableTop="@drawable/ic_baseline_home_24"
+        android:text="Home"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="10sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+
+        android:drawableTop="@drawable/ic_baseline_event_available_24"
+        android:padding="-10dp"
+        android:text="Plantões"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="10sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+
+        android:drawableTop="@drawable/ic_baseline_favorite_border_24"
+        android:text="Favoritos"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="10sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:drawableTop="@drawable/ic_baseline_person_outline_24"
+        android:text="Minha Conta"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="10sp" />
+
+
+</LinearLayout>
