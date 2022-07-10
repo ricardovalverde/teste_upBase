@@ -11,4 +11,9 @@
     <string name="dia">Dia</string>
     <string name="continuar">Continuar</string>
     <string name="voltar">Voltar</string>
+    <string name="esther">Esther</string>
+    <string name="home_care">Home Care</string>
+    <string name="perfil">Selecione seu perfil abaixo para acessar sua conta:</string>
+    <string name="respons">Responsável</string>
+    <string name="profissional">Profissional</string>
 </resources>

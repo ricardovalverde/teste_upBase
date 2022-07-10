@@ -10,4 +10,5 @@
     <color name="main">#006557</color>
     <color name="background">#A9F8F8F8</color>
     <color name="continue_background">#07689f</color>
+    <color name="login_background">#098E79</color>
 </resources>
