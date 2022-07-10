@@ -5,9 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
-    android:orientation="vertical"
     app:layout_constraintBottom_toTopOf="@id/icons"
-    tools:context=".MainActivity">
+    tools:context=".Contratar">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/main_toolbar"
@@ -38,6 +37,7 @@
         android:layout_margin="30dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="28dp"
+        android:fontFamily="@font/nunito_semibold"
         android:text="@string/selec_dia_horario"
         android:textColor="@color/black"
         android:textSize="23sp"
@@ -107,7 +107,7 @@
         android:layout_width="0dp"
         android:layout_height="45dp"
         android:layout_marginTop="48dp"
-        android:layout_marginEnd="10dp"
+
         android:background="@drawable/shape_btn_blue"
         android:fontFamily="@font/nunito_semibold"
         android:text="@string/continuar"

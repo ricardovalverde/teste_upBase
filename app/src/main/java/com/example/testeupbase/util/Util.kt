@@ -1,11 +1,13 @@
 package com.example.testeupbase.util
 
+import android.app.Activity
 import android.content.Context
 import android.view.Window
 import android.view.inputmethod.InputMethodManager
 import androidx.annotation.ColorRes
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
-import com.example.testeupbase.MainActivity
+import com.example.testeupbase.Contratar
 import com.google.android.material.textfield.TextInputEditText
 
 class Util {
@@ -13,7 +15,7 @@ class Util {
         window.statusBarColor = (ContextCompat.getColor(context, color))
     }
 
-    fun setToolbar(toolbar: androidx.appcompat.widget.Toolbar, activity: MainActivity) {
+    fun setToolbar(toolbar: androidx.appcompat.widget.Toolbar, activity: Contratar) {
         activity.setSupportActionBar(toolbar)
         activity.supportActionBar?.apply {
             setDisplayShowHomeEnabled(true)
@@ -30,4 +32,5 @@ class Util {
         ) as InputMethodManager
         inputManage.hideSoftInputFromWindow(editText.windowToken, 0)
     }
+
 }

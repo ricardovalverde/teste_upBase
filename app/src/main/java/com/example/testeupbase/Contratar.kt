@@ -3,31 +3,29 @@ package com.example.testeupbase
 import android.annotation.SuppressLint
 import android.app.DatePickerDialog
 import android.app.TimePickerDialog
-import android.os.Build
 import android.os.Bundle
-import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import com.example.testeupbase.util.Util
 import com.google.android.material.textfield.TextInputEditText
 import java.util.*
 
-class MainActivity : AppCompatActivity() {
-    @RequiresApi(Build.VERSION_CODES.N)
+class Contratar : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_contratar)
 
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
 
-        Util().setToolbar(findViewById(R.id.main_toolbar), this@MainActivity)
-        Util().setStatusBarColor(this@MainActivity, window, R.color.main)
+        Util().setToolbar(findViewById(R.id.main_toolbar), this@Contratar)
+        Util().setStatusBarColor(this@Contratar, window, R.color.main)
 
         setDatePicker()
         setTimePicker()
 
-
     }
+
 
     @SuppressLint("SetTextI18n")
     private fun setDatePicker() {
@@ -42,10 +40,10 @@ class MainActivity : AppCompatActivity() {
 
 
         date.setOnClickListener {
-            Util().hideKeyboard(this@MainActivity, findViewById(R.id.nome_paciente_text))
+            Util().hideKeyboard(this@Contratar, findViewById(R.id.nome_paciente_text))
             val datePickerDialog =
                 DatePickerDialog(
-                    this@MainActivity, DatePickerDialog.OnDateSetListener
+                    this@Contratar, DatePickerDialog.OnDateSetListener
                     { view, year, monthOfYear, dayOfMonth ->
                         date.setText("" + dayOfMonth + " - " + (monthOfYear + 1) + " - " + year)
                     }, year, month, day
@@ -64,7 +62,7 @@ class MainActivity : AppCompatActivity() {
         val minute = calendar.get(Calendar.MINUTE)
 
         hourField.setOnClickListener {
-            Util().hideKeyboard(this@MainActivity, findViewById(R.id.nome_paciente_text))
+            Util().hideKeyboard(this@Contratar, findViewById(R.id.nome_paciente_text))
 
             timePicker = TimePickerDialog(
                 this,
@@ -81,4 +79,6 @@ class MainActivity : AppCompatActivity() {
             timePicker.show()
         }
     }
+
+
 }
