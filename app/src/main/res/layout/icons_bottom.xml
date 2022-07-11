@@ -2,7 +2,6 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_gravity="center"
     android:background="@color/white">
 
     <Button
@@ -11,8 +10,9 @@
         android:background="@android:color/transparent"
         android:drawableTop="@drawable/ic_baseline_home_24"
         android:text="@string/home"
+        android:textAllCaps="false"
         android:textColor="@android:color/darker_gray"
-        android:textSize="11sp" />
+        android:textSize="12sp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -21,8 +21,9 @@
         android:drawableTop="@drawable/ic_baseline_event_available_24"
         android:padding="-10dp"
         android:text="@string/plantoes"
+        android:textAllCaps="false"
         android:textColor="@android:color/darker_gray"
-        android:textSize="11sp" />
+        android:textSize="12sp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -30,8 +31,9 @@
         android:background="@android:color/transparent"
         android:drawableTop="@drawable/ic_baseline_favorite_border_24"
         android:text="@string/favoritos"
+        android:textAllCaps="false"
         android:textColor="@android:color/darker_gray"
-        android:textSize="11sp" />
+        android:textSize="12sp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -39,7 +41,8 @@
         android:background="@android:color/transparent"
         android:drawableTop="@drawable/ic_baseline_person_outline_24"
         android:text="@string/minha_conta"
+        android:textAllCaps="false"
         android:textColor="@android:color/darker_gray"
-        android:textSize="10sp" />
+        android:textSize="12sp" />
 
 </LinearLayout>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
+    android:background="@color/main_background"
     app:layout_constraintBottom_toTopOf="@id/icons"
     tools:context=".Contratar">
 
@@ -139,7 +139,7 @@
 
         <include
             layout="@layout/icons_bottom"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

@@ -11,9 +11,6 @@
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
-        <!-- Customize your theme
-         here. -->
-
         <item name="homeAsUpIndicator">@drawable/ic_baseline_arrow_back_24</item>
         <item name="android:textColorHint">@color/black</item>
     </style>
