@@ -54,7 +54,7 @@
         app:layout_constraintTop_toBottomOf="@+id/text_info">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/nome_paciente_text"
+            android:id="@+id/text_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/nunito_semibold"

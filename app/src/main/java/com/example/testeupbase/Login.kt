@@ -6,7 +6,7 @@ import android.view.MotionEvent
 import androidx.appcompat.app.AppCompatActivity
 import com.example.testeupbase.util.Util
 
-public class Login : AppCompatActivity() {
+class Login : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -14,12 +14,11 @@ public class Login : AppCompatActivity() {
         Util().setStatusBarColor(this@Login, window, R.color.login_background)
     }
 
-
+    var x1 = 0.0f
+    var y1 = 0.0f
+    var x2 = 0.0f
+    var y2 = 0.0f
     override fun onTouchEvent(touchEvent: MotionEvent): Boolean {
-        var x1 = 0.0f
-        var y1 = 0.0f
-        var x2 = 0.0f
-        var y2 = 0.0f
         when (touchEvent.action) {
             MotionEvent.ACTION_DOWN -> {
                 x1 = touchEvent.x
@@ -39,5 +38,4 @@ public class Login : AppCompatActivity() {
         }
         return false
     }
-
 }

@@ -16,4 +16,9 @@
     <string name="perfil">Selecione seu perfil abaixo para acessar sua conta:</string>
     <string name="respons">Responsável</string>
     <string name="profissional">Profissional</string>
+    <string name="reportar">Reportar</string>
+    <string name="prof_nao_comp">O profissional não compareceu.</string>
+    <string name="prof_bom_serv">O profissional não prestou um bom serviço.</string>
+    <string name="outro">Outro.</string>
+    <string name="especifique">Especifique aqui o que houve.</string>
 </resources>
